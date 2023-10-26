@@ -1,3 +1,3 @@
-This is an AI SaaS app.
+This is an SaaS AI app.
 Project is still in progress...
 
