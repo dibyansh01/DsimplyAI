@@ -1,3 +1,5 @@
+import Navbar from "@/components/navbar"
+
 const DashBoardLayout = ({children} : {children: React.ReactNode}) => {
     return (
         <div className="h-full relative">
@@ -7,7 +9,7 @@ const DashBoardLayout = ({children} : {children: React.ReactNode}) => {
                 </div>
             </div>
             <main className="md:pl-72">
-                hello Content
+                <Navbar />
                 {children}
 
             </main>
