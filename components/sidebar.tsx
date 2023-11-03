@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import { LayoutDashboard } from "lucide-react";
+import { CodeIcon, ImageIcon, LayoutDashboard, MessageSquare, MusicIcon, SettingsIcon, VideoIcon } from "lucide-react";
 
 
 const montserrat = Montserrat({weight: "600", subsets: ["latin"]});
@@ -19,10 +19,40 @@ const routes = [
         color: "text-sky-500"
     },
     {
-        label: "Dashboard",
-        icon: LayoutDashboard,
+        label: "Conversation",
+        icon: MessageSquare,
         href: "/dashboard",
-        color: "text-sky-500"
+        color: "text-violet-500"
+    },
+    {
+        label: "Image Genaration",
+        icon: ImageIcon,
+        href: "/dashboard",
+        color: "text-pink-500"
+    },
+    {
+        label: "Video Genaration",
+        icon: VideoIcon,
+        href: "/dashboard",
+        color: "text-orange-500"
+    },
+    {
+        label: "Music Generation",
+        icon: MusicIcon,
+        href: "/dashboard",
+        color: "text-emerald-500"
+    },
+    {
+        label: "Code Generation",
+        icon: CodeIcon,
+        href: "/dashboard",
+        color: "text-green-500"
+    },
+    {
+        label: "Settings",
+        icon: SettingsIcon,
+        href: "/dashboard",
+       
     }
 ]
 
