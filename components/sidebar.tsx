@@ -21,37 +21,37 @@ const routes = [
     {
         label: "Conversation",
         icon: MessageSquare,
-        href: "/dashboard",
+        href: "/conversation",
         color: "text-violet-500"
     },
     {
         label: "Image Genaration",
         icon: ImageIcon,
-        href: "/dashboard",
+        href: "/image",
         color: "text-pink-500"
     },
     {
         label: "Video Genaration",
         icon: VideoIcon,
-        href: "/dashboard",
+        href: "/video",
         color: "text-orange-500"
     },
     {
         label: "Music Generation",
         icon: MusicIcon,
-        href: "/dashboard",
+        href: "/music",
         color: "text-emerald-500"
     },
     {
         label: "Code Generation",
         icon: CodeIcon,
-        href: "/dashboard",
+        href: "/code",
         color: "text-green-500"
     },
     {
         label: "Settings",
         icon: SettingsIcon,
-        href: "/dashboard",
+        href: "/settings",
        
     }
 ]
@@ -63,7 +63,6 @@ const Sidebar = ()=> {
                 <Link href="/dashboard" className="flex items-center pl-3 mb-14">
                     <div className="relative h-8 w-8 mr-4">
                         <Image fill alt="Logo" src="/logo.png" />
-
                     </div>
                     <h1 className={cn("text-2xl font-bold", montserrat.className)}>
                         DsimplyAI
