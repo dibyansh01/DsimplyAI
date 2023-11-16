@@ -1,9 +1,20 @@
+import Image from "next/image"
 
 
 export const Loader = () => {
     return (
         <div className="h-full flex flex-col gap-y-4 items-center justify-center">
-            Loading..
+           <div className="w-10 h-10 animate-spin">
+            <Image 
+                alt="logo"
+                fill
+                src="/logo.png"
+            
+            />
+           </div>
+           <p className="text-sm text-muted-foreground">
+            DsimplyAI is thinking...
+           </p>
         </div>
     )
 }
