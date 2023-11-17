@@ -2,11 +2,12 @@
 
 import axios from "axios";
 import * as z from "zod";
-import { MessageSquare } from "lucide-react"
+import { Code, MessageSquare } from "lucide-react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 import { ChatCompletionRequestMessage } from "openai";
 
 import { Heading } from "@/components/heading"
@@ -24,7 +25,7 @@ import { BotAvatar } from "@/components/bot-avatar";
 
 
 
-const ConversationPage = ()=> {
+const CodePage = ()=> {
     const router = useRouter();
     const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([]);
 
@@ -45,7 +46,7 @@ const ConversationPage = ()=> {
             }
             const newMessages = [...messages, userMessage]
 
-            const response = await axios.post("/api/conversation", {
+            const response = await axios.post("/api/code", {
                 messages: newMessages,
             });
 
@@ -64,11 +65,11 @@ const ConversationPage = ()=> {
     return (
         <div>
             <Heading
-                title="Conversation"
-                description="Make AI your companion with simple conversation"
-                icon={MessageSquare}
-                iconColor="text-violet-500"
-                bgColor="bg-violet-500/10"
+                title="Code Generation"
+                description="Make AI your companion for writing code."
+                icon={Code}
+                iconColor="text-green-500"
+                bgColor="bg-green-500/10"
             />
             <div className="px-4 lg:px-8">
                 <div>
@@ -85,7 +86,7 @@ const ConversationPage = ()=> {
                                             <Input
                                                 className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                                                 disabled={isLoading}
-                                                placeholder="What is the radius of earth?"
+                                                placeholder="Generate a sign-in page using react."
                                                 {...field}
                                             />
                                         </FormControl>
@@ -117,9 +118,22 @@ const ConversationPage = ()=> {
                                     )}
                             >
                                 {message.role === "user" ? <UserAvatar/> : <BotAvatar />}
-                                <p className="text-sm">
-                                    {message.content}
-                                </p>
+                                <ReactMarkdown
+                                    components={{
+                                        pre: ({node, ...props}) => (
+                                            <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
+                                                <pre {...props}/>
+
+                                            </div>
+                                        ),
+                                        code: ({node, ...props}) => (
+                                            <code className="bg-black/10 rounded-lg p-1" {...props} />
+                                        )
+                                    }}
+                                    className="text-sm overflow-hidden leading-7"
+                                >
+                                    {message.content || ""}
+                                </ReactMarkdown>
                                 
                             </div>
                         ))}
@@ -131,4 +145,4 @@ const ConversationPage = ()=> {
     )
 }
 
-export default ConversationPage
+export default CodePage
