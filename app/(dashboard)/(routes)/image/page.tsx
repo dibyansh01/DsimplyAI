@@ -187,12 +187,10 @@ const ImagePage = ()=> {
                                         onClick={() => window.open(src)}
                                         variant="secondary" 
                                         className="w-full"
-                                    
                                     >
                                         <Download className="h-4 w-4 mr-2" />
                                         Download
                                     </Button>
-
                                 </CardFooter>
                             </Card>
                         ))}
