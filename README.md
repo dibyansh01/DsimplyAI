@@ -3,9 +3,9 @@ Project is still in progress...
 
 # DsimplyAI-SaaS
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dibyansh01/DsimplyMart-dashboard/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/dibyansh01/DsimplyMart-dashboard)](https://github.com/dibyansh01/DsimplyMart-dashboard/issues)
-[![GitHub stars](https://img.shields.io/github/stars/dibyansh01/DsimplyMart-store)](https://github.com/dibyansh01/DsimplyMart-store/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dibyansh01/DsimplyAI-SaaS/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/dibyansh01/DsimplyMart-dashboard)](https://github.com/dibyansh01/DsimplyAI-SaaS/issues)
+[![GitHub stars](https://img.shields.io/github/stars/dibyansh01/DsimplyMart-store)](https://github.com/dibyansh01/DsimplyAI-SaaS/stargazers)
 
 
 ## Description
