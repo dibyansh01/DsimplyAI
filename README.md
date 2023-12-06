@@ -54,6 +54,8 @@ The Ecommerce Dashboard offers a comprehensive set of features for administrator
 ## Screenshots
 
 ![Screenshot from 2023-12-06 13-17-49](https://github.com/dibyansh01/DsimplyAI-SaaS/assets/129924389/be940547-1fd4-4461-8f36-9d4b892e779b)
+
+
 ![Screenshot from 2023-12-06 13-18-35](https://github.com/dibyansh01/DsimplyAI-SaaS/assets/129924389/00b1467f-d6a2-4173-9d5a-f8f4e3edb68f)
 
 
