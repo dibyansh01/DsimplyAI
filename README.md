@@ -45,6 +45,8 @@ The Ecommerce Dashboard offers a comprehensive set of features for administrator
 - React
 - Tailwind
 - Shadcn UI
+- OpenAI
+- Replicate
 - Axios
 - Clerk
 - Stripe
