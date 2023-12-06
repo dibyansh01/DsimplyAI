@@ -48,8 +48,8 @@ The Ecommerce Dashboard offers a comprehensive set of features for administrator
 - Axios
 - Clerk
 - Stripe
-- and more...
-- 
+  and more...
+  
 
 ## Screenshots
 
