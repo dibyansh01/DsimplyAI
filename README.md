@@ -1,7 +1,7 @@
 
 # Project is still under development..
 
-# DsimplyAI-SaaS
+# DsimplyAI
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dibyansh01/DsimplyAI-SaaS/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/dibyansh01/DsimplyMart-dashboard)](https://github.com/dibyansh01/DsimplyAI-SaaS/issues)
