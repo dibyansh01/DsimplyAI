@@ -68,7 +68,7 @@ The Ecommerce Dashboard offers a comprehensive set of features for administrator
 ## Demo
 
 
-You can access the live demo of the Ecommerce web app by following the link below:
+You can access the live demo of the DsimplyAI web app by following the link below:
 
 Not deployed yet...
 
