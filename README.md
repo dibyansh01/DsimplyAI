@@ -48,6 +48,8 @@ The Ecommerce Dashboard offers a comprehensive set of features for administrator
 - OpenAI
 - Replicate
 - Axios
+- Supabase
+- Prisma
 - Clerk
 - Stripe
   and more...
