@@ -111,7 +111,7 @@ To use and interact with this DsimplyAI-SaaS, follow the steps below:
 
 ## Contributing
 
-Thank you for considering contributing to DsimplyMart-store! We welcome contributions from the community to make this project even better. Here's how you can get involved:
+Thank you for considering contributing to DsimplyAI! We welcome contributions from the community to make this project even better. Here's how you can get involved:
 
 - **Reporting Issues**: If you find a bug or have a suggestion for an improvement, please [open an issue](https://github.com/dibyansh01/DsimplyAI-SaaS/issues) on this repository. Provide as much detail as possible to help us understand and address the problem.
 
