@@ -1,5 +1,5 @@
 
-# Project is still under development..
+# Project is under development..
 
 # DsimplyAI
 
