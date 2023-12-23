@@ -97,7 +97,6 @@ const Sidebar = ({apiLimitCount = 0}: SidebarProps)=> {
                 apiLimitCount={apiLimitCount}
                 />
             </div>
-            
         </div>
     )
 }
