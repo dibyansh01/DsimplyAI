@@ -1,5 +1,5 @@
 
-# Project is still under development..
+# Project is under development..
 
 # DsimplyAI
 
@@ -27,7 +27,7 @@ This is a single SaaS platfrom for multiple AI Tools(Code Generation, Image Gene
 
 ## Features
 
-The Ecommerce Dashboard offers a comprehensive set of features for administrators:
+The DsimplyAI platform offers a comprehensive set of features:
 
 - **Clerk Authentication**: 
 - **Code Generation**: 
