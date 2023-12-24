@@ -20,11 +20,13 @@ import { Loader } from "@/components/loader";
 import { cn } from "@/lib/utils";
 import { UserAvatar } from "@/components/user-avatar";
 import { BotAvatar } from "@/components/bot-avatar";
+import { usePromodal } from "@/hooks/use-pro-modal";
 
 
 
 
 const ConversationPage = ()=> {
+    const proModal = usePromodal();
     const router = useRouter();
     const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([]);
 
@@ -54,8 +56,9 @@ const ConversationPage = ()=> {
             form.reset();
 
         } catch(error: any){
-            //todo-premium model
-            console.log(error)
+           if(error?.response?.status === 403){
+                proModal.onOpen();
+           }
         } finally {
             router.refresh();
         }

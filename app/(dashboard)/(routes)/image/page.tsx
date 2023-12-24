@@ -23,11 +23,13 @@ import { BotAvatar } from "@/components/bot-avatar";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
+import { usePromodal } from "@/hooks/use-pro-modal";
 
 
 
 
 const ImagePage = ()=> {
+    const proModal = usePromodal();
     const router = useRouter();
     const [images, setImages] = useState<string[]>([])
    
@@ -55,8 +57,9 @@ const ImagePage = ()=> {
             form.reset();
 
         } catch(error: any){
-            //todo-premium model
-            console.log(error)
+            if(error?.response?.status === 403){
+                proModal.onOpen();
+           }
         } finally {
             router.refresh();
         }

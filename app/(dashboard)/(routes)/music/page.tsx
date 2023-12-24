@@ -17,9 +17,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
+import { usePromodal } from "@/hooks/use-pro-modal";
 
 
 const MusicPage = ()=> {
+    const proModal = usePromodal();
     const router = useRouter();
     const [music, setMusic] = useState<string>();
 
@@ -44,8 +46,9 @@ const MusicPage = ()=> {
             form.reset();
 
         } catch(error: any){
-            //todo-premium model
-            console.log(error)
+            if(error?.response?.status === 403){
+                proModal.onOpen();
+           }
         } finally {
             router.refresh();
         }
