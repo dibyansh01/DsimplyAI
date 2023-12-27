@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
+
 import { Card, CardContent } from "./ui/card";
 import { MAX_FREE_COUNTS } from "@/constants";
 import { Progress } from "@/components/ui/progress";
@@ -10,9 +11,10 @@ import { usePromodal } from "@/hooks/use-pro-modal";
 
 interface FreeCounterProps {
     apiLimitCount: number;
+    isPro: boolean
 }
 
-export const FreeCounter = ({apiLimitCount = 0}: FreeCounterProps) => {
+export const FreeCounter = ({apiLimitCount = 0, isPro = false}: FreeCounterProps) => {
 
     const proModal = usePromodal();
 
@@ -23,6 +25,10 @@ export const FreeCounter = ({apiLimitCount = 0}: FreeCounterProps) => {
     }, []);
 
     if(!mounted){
+        return null;
+    }
+
+    if(isPro){
         return null;
     }
 
