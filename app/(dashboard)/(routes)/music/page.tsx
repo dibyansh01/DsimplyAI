@@ -8,9 +8,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ChatCompletionRequestMessage } from "openai";
+import toast from "react-hot-toast";
 
 import { Heading } from "@/components/heading"
-
 import { formSchema } from "./constants";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 import { usePromodal } from "@/hooks/use-pro-modal";
+
 
 
 const MusicPage = ()=> {
@@ -48,6 +49,8 @@ const MusicPage = ()=> {
         } catch(error: any){
             if(error?.response?.status === 403){
                 proModal.onOpen();
+           } else {
+            toast.error("Something went wrong.");
            }
         } finally {
             router.refresh();
