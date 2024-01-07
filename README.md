@@ -1,5 +1,5 @@
 
-# Project is under development..
+
 
 # DsimplyAI
 
@@ -29,12 +29,13 @@ This is a single SaaS platfrom for multiple AI Tools(Code Generation, Image Gene
 
 The DsimplyAI platform offers a comprehensive set of features:
 
-- **Clerk Authentication**: 
-- **Code Generation**: 
-- **Image Generation**: 
-- **Music Generation**: 
-- **Video Generation**: 
-- **Conversation Model**: 
+- **Clerk Authentication**
+- **Code Generation**
+- **Image Generation**
+- **Music Generation**
+- **Video Generation**
+- **Conversation Model**
+- **Customer Support**
   
 
 
@@ -52,10 +53,14 @@ The DsimplyAI platform offers a comprehensive set of features:
 - Prisma
 - Clerk
 - Stripe
+- Crisp
   and more...
   
 
 ## Screenshots
+
+![Screenshot from 2024-01-08 00-46-18](https://github.com/dibyansh01/DsimplyAI/assets/129924389/59f879b9-c7ff-4056-960b-e1486cad533c)
+
 
 ![Screenshot from 2023-12-06 13-17-49](https://github.com/dibyansh01/DsimplyAI-SaaS/assets/129924389/be940547-1fd4-4461-8f36-9d4b892e779b)
 
@@ -70,7 +75,7 @@ The DsimplyAI platform offers a comprehensive set of features:
 
 You can access the live demo of the DsimplyAI web app by following the link below:
 
-Not deployed yet...
+[DsimplyAI](https://dsimply-ai.vercel.app/)
 
 Feel free to explore the features and functionality of the app. We welcome your feedback and suggestions.
 
@@ -102,11 +107,10 @@ Feel free to explore the features and functionality of the app. We welcome your 
 To use and interact with this DsimplyAI-SaaS, follow the steps below:
 
 ### 1. Login
-
-1. **Access the Dashboard**: 
-2. **Sign In**: 
+Navigate to [DsimplyAI](https://dsimply-ai.vercel.app/) and log in using your Gmail or GitHub account.
 
 ### 2. Using the AI tools
+Now begin interacting with the various AI models available in front of you.
 
 
 ## Contributing
@@ -121,9 +125,6 @@ Thank you for considering contributing to DsimplyAI! We welcome contributions fr
 
 - **Documentation**: If you find any issues with the documentation, or if you want to improve it, please submit a pull request with your changes.
 
-Let's create a positive and inclusive environment for all users and contributors.
-
-Thank you for your support in making DsimplyMart-store a great eCommerce web app!
 
 
 ## License
