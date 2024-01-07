@@ -93,7 +93,7 @@ Feel free to explore the features and functionality of the app. We welcome your 
     ```bash
    npm install
 
-3. Configure environment variables
+3. Configure your environment variables using the 'env.example' file.
 
 5. Start the development server:
    ```bash
