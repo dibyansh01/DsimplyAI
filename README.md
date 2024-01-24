@@ -93,7 +93,14 @@ Feel free to explore the features and functionality of the app. We welcome your 
     ```bash
    npm install
 
-3. Configure your environment variables using the 'env.example' file.
+3. Configure your environment variables using the 'env.example' file and set up database.
+   
+    ```bash
+   npx prisma db push
+   npx prisma generate
+
+    //And for databse UI run
+    npx prisma studio
 
 5. Start the development server:
    ```bash
